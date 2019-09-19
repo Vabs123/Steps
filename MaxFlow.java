@@ -12,7 +12,7 @@ class MaxFlow{
 			parent.put(0, -1);
 			q = new LinkedList<>();
 			q.add(0);
-			List<Integer> flowPath = canFlow(g, parent, q, 6) ;
+			List<Integer> flowPath = canFlow(g, parent, q, 5) ;
 			if(flowPath == null) break;
 			totalFlow += flowPath.get(0);
 			paths.add(flowPath);
